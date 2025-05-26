@@ -39,6 +39,6 @@ jobs:
             --account-name chenjrstorageaccount \
             --account-key ${{secrets.AZURE_STORAGE_KEY}} \ 
             --destination '$web' \
-            --source./forntend/dist \
+            --source ./frontend/dist \
             --overwrite
          
