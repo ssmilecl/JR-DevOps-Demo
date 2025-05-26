@@ -29,7 +29,7 @@ jobs:
         run: npm install
         working-directory: ./frontend
 
-      - name: Build Vite project
+      - name: Build Vite app
         run: npm run build
         working-directory: ./frontend
 
