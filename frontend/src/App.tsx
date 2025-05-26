@@ -6,7 +6,7 @@
 function App(){
   const [message, setMessage] = useState('Lodading...');
 
-  const backendBaseUrl = "jrdevops1-h2fabjg4dmfmaycq.australiasoutheast-01.azurewebsites.net/api";
+  //const backendBaseUrl = "jrdevops1-h2fabjg4dmfmaycq.australiasoutheast-01.azurewebsites.net/api";
   const helloworldEndpoint = '${backendBaseUrl}/helloworld';
 
   useEffect (() => {
