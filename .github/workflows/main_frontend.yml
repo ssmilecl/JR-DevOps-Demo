@@ -34,11 +34,11 @@ jobs:
         working-directory: ./frontend
 
       - name: Deploy via Azure CLI
-        run:
+
+        run: |
          az storage blob upload-batch \
             --account-name chenjrstorageaccount \
             --account-key ${{secrets.AZURE_STORAGE_KEY}} \ 
             --destination '$web' \
             --source ./frontend/dist \
             --overwrite
-         
